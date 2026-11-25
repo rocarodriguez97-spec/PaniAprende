@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "configuracion": {
+    "minutos_por_punto": 10,
+    "mensaje_victoria_general": "¡Excelente trabajo! Ganaste más minutos para jugar."
+  },
+  "minijuegos": [
+    {
+      "id": "juego_01",
+      "tipo": "alimentar_animal",
+      "categoria": "numeros",
+      "instruccion_voz": "¡El panda tiene mucha hambre! Dale tres manzanas.",
+      "personaje": "panda",
+      "objeto_arrastrar": "manzana",
+      "cantidad_objetivo": 3,
+      "recompensa_puntos": 1,
+      "audio_exito": "¡Qué rico! El panda comió tres manzanas. ¡Ganaste 10 minutos!"
+    },
+    {
+      "id": "juego_02",
+      "tipo": "globos_sorpresa",
+      "categoria": "vocales",
+      "instruccion_voz": "¡Explota el globo que tiene la letra A, de avión!",
+      "objetivo_valor": "A",
+      "opciones": [
+        { "valor": "A", "color": "rojo" },
+        { "valor": "O", "color": "azul" },
+        { "valor": "U", "color": "verde" }
+      ],
+      "recompensa_puntos": 1,
+      "audio_exito": "¡Muy bien! Esa es la letra A. ¡Sumaste 10 minutos más!"
+    },
+    {
+      "id": "juego_03",
+      "tipo": "sonido_animal",
+      "categoria": "animales",
+      "instruccion_voz": "Escucha con atención... ¿Qué animal hace miau?",
+      "sonido_pista": "gato_maullido",
+      "objetivo_valor": "gato",
+      "opciones": [
+        { "valor": "perro", "imagen": "perro_caricatura" },
+        { "valor": "gato", "imagen": "gato_caricatura" },
+        { "valor": "vaca", "imagen": "vaca_caricatura" }
+      ],
+      "recompensa_puntos": 1,
+      "audio_exito": "¡Exacto! El gatito hace miau. ¡Ganaste una estrella y 10 minutos!"
+    },
+    {
+      "id": "juego_04",
+      "tipo": "rompecabezas_formas",
+      "categoria": "figuras",
+      "instruccion_voz": "Arrastra la estrella amarilla hasta su sombra.",
+      "figura_objetivo": "estrella",
+      "color": "amarillo",
+      "distractores": ["circulo", "cuadrado"],
+      "recompensa_puntos": 1,
+      "audio_exito": "¡Brillante! Encajaste la estrella perfecta."
+    },
+    {
+      "id": "juego_05",
+      "tipo": "atrapa_color",
+      "categoria": "colores",
+      "instruccion_voz": "¡Toca todas las pelotas de color azul antes de que caigan!",
+      "color_objetivo": "azul",
+      "cantidad_requerida": 3,
+      "colores_distractores": ["rojo", "verde", "amarillo"],
+      "recompensa_puntos": 1,
+      "audio_exito": "¡Súper rápido! Atrapaste todas las pelotas azules."
+    },
+    {
+      "id": "juego_06",
+      "tipo": "memoria_parejas",
+      "categoria": "animales",
+      "instruccion_voz": "Voltea las cartas y encuentra las parejas de animalitos iguales.",
+      "pares": ["leon", "elefante", "mono"],
+      "recompensa_puntos": 2,
+      "audio_exito": "¡Qué buena memoria tienes! Encontraste todas las parejas y ganaste 20 minutos."
+    },
+    {
+      "id": "juego_07",
+      "tipo": "conectores_conteo",
+      "categoria": "numeros",
+      "instruccion_voz": "Une con tu dedo el número cinco con el grupo donde hay cinco estrellas.",
+      "numero_objetivo": 5,
+      "grupos_opciones": [
+        { "cantidad": 2, "icono": "estrella" },
+        { "cantidad": 5, "icono": "estrella" },
+        { "cantidad": 1, "icono": "estrella" }
+      ],
+      "recompensa_puntos": 1,
+      "audio_exito": "¡Contaste muy bien! Ahí hay cinco estrellas."
+    },
+    {
+      "id": "juego_08",
+      "tipo": "carrera_obstaculos",
+      "categoria": "vocales",
+      "instruccion_voz": "¡Ayuda al conejito a saltar! Toca el camino que tiene la letra E de elefante.",
+      "objetivo_valor": "E",
+      "carriles": ["I", "E", "O"],
+      "recompensa_puntos": 1,
+      "audio_exito": "¡Yupi! El conejito saltó por la letra E."
+    },
+    {
+      "id": "juego_09",
+      "tipo": "video_comprension",
+      "categoria": "videos_cortos",
+      "instruccion_voz": "Mira este video cortito con mucha atención. Al terminar te haré una pregunta.",
+      "youtube_video_id": "dQw4w9WgXcQ",
+      "pregunta_post_video": {
+        "instruccion_voz": "¿De qué color era el carro principal que salió en el video?",
+        "objetivo_valor": "rojo",
+        "opciones": [
+          { "valor": "rojo", "imagen": "carro_rojo" },
+          { "valor": "azul", "imagen": "carro_azul" },
+          { "valor": "verde", "imagen": "carro_verde" }
+        ]
+      },
+      "recompensa_puntos": 2,
+      "audio_exito": "¡Estuviste súper atento! Ganaste 20 minutos extra."
+    },
+    {
+      "id": "juego_10",
+      "tipo": "globos_sorpresa",
+      "categoria": "numeros",
+      "instruccion_voz": "¡Busca y explota el globo con el número siete!",
+      "objetivo_valor": "7",
+      "opciones": [
+        { "valor": "4", "color": "morado" },
+        { "valor": "7", "color": "naranja" },
+        { "valor": "2", "color": "celeste" }
+      ],
+      "recompensa_puntos": 1,
+      "audio_exito": "¡Fantástico! Ese es el número siete. ¡Insignia desbloqueada!"
+    }
+  ]
+}
